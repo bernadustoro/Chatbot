@@ -19,7 +19,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <button :style="{width: props.width}" class="h-[38px] bg-green-500 rounded-[4px]">
+    <button :style="{width: props.width}" class="h-[38px] bg-green-500 text-white rounded-[4px]">
         {{ props.text }}
     </button>
 </template>
