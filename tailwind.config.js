@@ -8,7 +8,9 @@ export default {
             colors: {
                 transparent: 'transparent',
                 current: 'currentColor',
-                'middle': '#343541'
+                'middle': '#343541',
+                'black': '#2E3339',
+                'blacksite': '#202123'
             },
             fontFamily: {
                 'inter': ['Inter', 'sans-serif']

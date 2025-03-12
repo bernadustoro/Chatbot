@@ -15,7 +15,7 @@ import Image from '@/assets/image/ChatGPT Logo.png';
             <span class="text-white font-inter font-medium text-[15px]">Log in with your OpenAI account to continue</span>
         </div>
         <div class="flex flex-row gap-4">
-            <ButtonText text="Log in" width="66px"/>
+            <ButtonText toRoute="/Login" text="Log in" width="66px"/>
             <ButtonText text="Sign up" width="76px"/>
         </div>
     </div>

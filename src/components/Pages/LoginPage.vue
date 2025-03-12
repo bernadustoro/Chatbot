@@ -3,6 +3,8 @@ import { ref } from "vue";
 import VueRecaptcha from "vue3-recaptcha2";
 import logo from "../../assets/image/ChatGPT Logo.png";
 import ButtonText from "../componen/Global/ButtonText.vue";
+import ButtonImage from "../componen/Global/ButtonImage.vue";
+import googleLogo from "@/assets/image/Google Logo.png";
 
 const siteKey = "6LefH-UqAAAAAIm_Epm7Eh3Ce0oqckf9NpIDyXTY";
 const captchaResponse = ref(null);
@@ -14,12 +16,12 @@ const verifyCaptcha = (token) => {
 </script>
 
 <template>
-  <div>
-    <div class="text-black mt-[32px] flex justify-center">
+  <div class="">
+    <div class="text-black pt-[32px] flex justify-center">
         <img :src="logo" alt="" class="filter invert">
     </div>
     <div class="flex justify-center mt-[50px] mb-[32px]">
-      <span class="font-inter font-bold text-[31px] leading-[27px]">Welcome back</span>
+      <span class="text-black font-inter font-bold text-[31px] leading-[27px]">Welcome back</span>
     </div>
     <div class="flex flex-col items-center justify-center">
         <div class="flex flex-col gap-4">
@@ -51,15 +53,18 @@ const verifyCaptcha = (token) => {
     </div>
     <div class="flex justify-center mt-[16px]">
         <div class="w-[305px] h-[20px] flex justify-center gap-2">
-            <span class="font-inter font-normal text-[14px] leading-[27px]">Don’t have an account?</span>
+            <span class="font-inter font-normal text-[14px] leading-[27px] text-black">Don’t have an account?</span>
             <span class="text-green-500 font-inter font-normal text-[14px] leading-[27px]">Sign up</span>
         </div>
     </div>
     <div class="flex justify-center mt-[16px]">
         <div class="w-[305px] relative h-[27px] flex items-center justify-center">
             <div class="absolute w-full border-t-2 border-[#C3C8CF]"></div>
-            <div class="bg-white w-[40px] h-[20px] z-10 flex items-center justify-center text-[12px] font-inter leading-[27px]">OR</div>
+            <div class="bg-white text-black w-[40px] h-[20px] z-10 flex items-center justify-center text-[12px] font-inter leading-[27px]">OR</div>
         </div>
+    </div>
+    <div class="flex justify-center mt-[32px]">
+        <ButtonImage :img="googleLogo" text="Continue with Google"/>
     </div>
   </div>
 </template>
